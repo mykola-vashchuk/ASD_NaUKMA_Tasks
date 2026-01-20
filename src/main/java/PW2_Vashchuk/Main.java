@@ -5,18 +5,18 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         //===========TASK ONE==========
-//        BankAccount raccoon = new BankAccount("777JOKER777",200);
-//        System.out.println("Balance is: "+raccoon.getBalance());
-//        raccoon.deposit(350);
-//        System.out.println("Balance is: "+raccoon.getBalance());
-//        raccoon.withdraw(600);
-//        System.out.println("Balance is: "+raccoon.getBalance());
-//        raccoon.withdraw(250);
-//        System.out.println("Balance is: "+raccoon.getBalance());
-//        raccoon.deposit(-230);
-//        System.out.println("Balance is: "+raccoon.getBalance());
-//        raccoon.withdraw(7777);
-//        System.out.println("Balance is: "+raccoon.getBalance());
+        BankAccount raccoon = new BankAccount("777JOKER777",200);
+        System.out.println("Balance is: "+raccoon.getBalance());
+        raccoon.deposit(350);
+        System.out.println("Balance is: "+raccoon.getBalance());
+        raccoon.withdraw(600);
+        System.out.println("Balance is: "+raccoon.getBalance());
+        raccoon.withdraw(250);
+        System.out.println("Balance is: "+raccoon.getBalance());
+        raccoon.deposit(-230);
+        System.out.println("Balance is: "+raccoon.getBalance());
+        raccoon.withdraw(7777);
+        System.out.println("Balance is: "+raccoon.getBalance());
 
 //        //===========TASK TWO=========
 //        int[] array1 = new int[]{1,7,9,3,2};
