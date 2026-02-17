@@ -1,4 +1,4 @@
-package PW5_Vashchuk;
+package PW_5;
 
 abstract class ReportGenerator {
     public final void generate(){

@@ -1,4 +1,4 @@
-package PW5_Vashchuk;
+package PW_5;
 
 public interface EmailNotifier {
     default void send(String message){

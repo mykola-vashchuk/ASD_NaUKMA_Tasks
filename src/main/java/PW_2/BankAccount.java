@@ -1,4 +1,4 @@
-package PW2_Vashchuk;
+package PW_2;
 
 
 public class BankAccount {

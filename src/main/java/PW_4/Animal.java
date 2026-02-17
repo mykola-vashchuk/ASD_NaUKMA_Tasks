@@ -1,4 +1,4 @@
-package PW4_Vashchuk;
+package PW_4;
     abstract class Animal {
         abstract void speak();
     }

@@ -1,4 +1,4 @@
-package PW4_Vashchuk;
+package PW_4;
 class Task2 {
     public static void main(String[] args) {
         A a = new B();

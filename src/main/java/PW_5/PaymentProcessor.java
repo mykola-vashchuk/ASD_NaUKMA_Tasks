@@ -1,4 +1,4 @@
-package PW5_Vashchuk;
+package PW_5;
 
 public class PaymentProcessor {
     boolean process(PaymentMethod method, int amount){

@@ -1,4 +1,4 @@
-import PW4_Vashchuk.Calculator;
+import PW_4.Calculator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
