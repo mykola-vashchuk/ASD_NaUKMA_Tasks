@@ -1,4 +1,4 @@
-package PW5_Vashchuk;
+package PW_5;
 
 public class InterfaceTask {
     public static void main(String[] args) {

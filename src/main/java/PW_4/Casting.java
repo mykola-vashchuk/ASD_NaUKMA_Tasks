@@ -1,4 +1,4 @@
-package PW4_Vashchuk;
+package PW_4;
 
 public class Casting {
     public static void main(String[] args) {

@@ -1,6 +1,5 @@
-import PW2_Vashchuk.BankAccount;
+import PW_2.BankAccount;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 class BankAccountTest {
     @Test

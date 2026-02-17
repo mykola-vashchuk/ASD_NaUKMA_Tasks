@@ -1,4 +1,4 @@
-package PW5_Vashchuk;
+package PW_5;
 
 interface PaymentMethod {
     String name();

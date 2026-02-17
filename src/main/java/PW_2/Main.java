@@ -1,6 +1,4 @@
-package PW2_Vashchuk;
-
-import java.util.Arrays;
+package PW_2;
 
 public class Main {
     public static void main(String[] args) {

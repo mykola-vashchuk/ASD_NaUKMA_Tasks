@@ -1,4 +1,4 @@
-package PW5_Vashchuk;
+package PW_5;
 
 public interface SmsNotifier {
     default void send(String message){
