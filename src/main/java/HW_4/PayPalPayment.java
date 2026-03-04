@@ -9,6 +9,9 @@ public class PayPalPayment implements PaymentMethod{
     }
     @Override
     public boolean pay(int amount){
-        return amount > 10;
+        if(amount <= 0){
+            throw new IllegalArgumentException("AAmount must be grater than 0!");
+        }
+        return amount >= 10;
     }
 }

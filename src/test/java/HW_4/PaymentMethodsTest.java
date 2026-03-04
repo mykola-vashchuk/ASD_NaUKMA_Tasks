@@ -23,11 +23,11 @@ public class PaymentMethodsTest {
         assertFalse(result);
     }
 
-     @Test
-     public void test_PayPalPayment_NotValid() {
-         PaymentMethod paypal = new PayPalPayment();
-         int amount = 0;
-         boolean result = paypal.pay(amount);
-         assertFalse(result);
-     }
+    @Test
+    void testInvalidAmountThrowsException() {
+        PaymentMethod paypal = new PayPalPayment();
+        int amount = 0;
+        assertThrows(IllegalArgumentException.class, () -> paypal.pay(amount));
+    }
+
 }
