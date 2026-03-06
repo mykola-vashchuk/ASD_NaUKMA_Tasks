@@ -2,6 +2,8 @@ package HW_6;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Main {
@@ -24,11 +26,22 @@ public class Main {
             log.error("Export failure", e);
         }
 
-        // exception
+        // business exception
         try {
             service.resolveTicket(99L); //no such id
         } catch (AppException e) {
             System.out.println("User Warning: " + e.getMessage());
+        }
+
+        // infrastructure error (checked)
+        try {
+            Path restrictedPath = Paths.get("/root/denied_access.csv");
+            exporter.exportOpenTickets(restrictedPath, service.getAllTickets());
+        } catch (StorageException e) {
+
+            System.out.println("USER MESSAGE: The system cannot save the file at the moment. Please contact your administrator.");
+
+            log.error("Infrastructure failure during export to path: {}", e.getMessage(), e);
         }
     }
 }
