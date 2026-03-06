@@ -1,4 +1,4 @@
-package HW_6;
+package HW_7;
 
 public record Ticket(long id, String userEmail, String title, TicketStatus status) {
     public Ticket {

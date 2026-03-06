@@ -1,4 +1,4 @@
-package HW_6;
+package HW_7;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

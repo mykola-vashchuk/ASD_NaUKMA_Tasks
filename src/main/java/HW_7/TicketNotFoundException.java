@@ -1,4 +1,4 @@
-package HW_6;
+package HW_7;
 
 public class TicketNotFoundException extends AppException {
     public TicketNotFoundException(String message) {
