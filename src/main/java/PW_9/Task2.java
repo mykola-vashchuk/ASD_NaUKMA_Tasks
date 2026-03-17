@@ -5,7 +5,7 @@ public class Task2 {
     public String buildTicketId(String base) {
         int ticketCounter = 42; //effectively final
 
-        class IdBuilder {
+        class IdBuilder { // local
             public String generate() {
                 return base.toUpperCase() + "-" + ticketCounter;
             }
@@ -15,7 +15,7 @@ public class Task2 {
         return builder.generate();
     }
 
-    public Runnable runOnce() {
+    public Runnable runOnce() { // anonymous
         return new Runnable() {
             @Override
             public void run() {

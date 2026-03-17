@@ -8,4 +8,5 @@ public class CheckoutRequest {
     private Long userId;
     private List<Long> itemIds;
     private String shippingAddress;
+
 }
