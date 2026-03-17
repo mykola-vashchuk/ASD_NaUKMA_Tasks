@@ -6,6 +6,7 @@ public class Task2 {
         int ticketCounter = 42; //effectively final
 
         class IdBuilder { // local
+            // існує і видимий тільки в межах цього методу
             public String generate() {
                 return base.toUpperCase() + "-" + ticketCounter;
             }
@@ -16,6 +17,8 @@ public class Task2 {
     }
 
     public Runnable runOnce() { // anonymous
+        // без імені, на льоту створюжться для якогось одного разу
+        //одразу реалізує інтерфейсь і створює об'єкт
         return new Runnable() {
             @Override
             public void run() {
