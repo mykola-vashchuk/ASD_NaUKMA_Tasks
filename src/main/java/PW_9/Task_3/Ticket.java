@@ -34,6 +34,5 @@ public class Ticket {
 
         tickets.sort(Comparator.comparingInt(Ticket::getPriority)); //метод референс
 
-
     }
 }
