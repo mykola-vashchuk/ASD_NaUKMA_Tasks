@@ -7,7 +7,7 @@ public class Car {
         this.model = model;
     }
 
-    public static class Engine {
+    public static class Engine { // незлежний клас. не має доступу до модел поля
         private int horsepower;
 
         public Engine(int horsepower) {

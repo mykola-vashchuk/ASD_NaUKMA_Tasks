@@ -7,7 +7,7 @@ public class Library {
         this.name = name;
     }
 
-    public class Book {
+    public class Book { // inner class, тісно зв'язаний з зовнішнім, має доступ до всіх полів зовнішнього
         private String title;
         private String author;
 
