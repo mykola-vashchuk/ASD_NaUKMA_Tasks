@@ -14,7 +14,7 @@ public class Main {
         events.add(new Event("Event 3", LocalDateTime.of(2026, 3, 25, 14, 0), 60, ZoneId.of("Europe/Kyiv"), "Frontend"));
         events.add(new Event("Event 4", LocalDateTime.of(2026, 3, 25, 9, 0), 45, ZoneId.of("Europe/London"), "DevOps"));
 
-
+        System.out.println("\n--- Task 1-2: Functions ---");
         EventLab.notifyAll(events, System.out::println);
         /**
         Task 2
@@ -37,6 +37,24 @@ public class Main {
         for (Event[] pair : conflicts) {
             System.out.println(pair[0].getTitle() + " перетинається з " + pair[1].getTitle());
         }
-    }
 
+        /**
+         * Task 3
+         */
+        System.out.println("\n--- Task 3: Sorting ---");
+        LambdaRefactorLab.sortAnonymous(events);
+        LambdaRefactorLab.sortLambda(events);
+        LambdaRefactorLab.sortMethodRef(events);
+        EventLab.notifyAll(events, e -> System.out.println("Sorted: " + e.getTitle()));
+        /**
+         * Task 4
+         */
+        System.out.println("\n--- Task 4: Java Time ---");
+        Event firstEvent = events.get(0);
+        Event secondEvent = events.get(1);
+        System.out.println("Instant (" + firstEvent.getTitle() + "): " + DateTimeLab.toInstant(firstEvent));
+        long diffMinutes = DateTimeLab.minutesBetween(firstEvent, secondEvent);
+        System.out.println("Difference between " + firstEvent.getTitle() + " and " + secondEvent.getTitle() + ": " + diffMinutes + " min");
+        System.out.println("Start time of " + firstEvent.getTitle() + " in New York: " + DateTimeLab.startInZone(firstEvent, "America/New_York"));
+    }
 }
