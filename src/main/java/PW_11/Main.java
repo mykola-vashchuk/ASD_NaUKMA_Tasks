@@ -77,6 +77,7 @@ public class Main {
                         Sale::cents,
                         Integer::sum
                 ));
+
         System.out.println("\ntask 3 - revenue by product (cents): " + revenueByProduct);
 
         // counting total transactions per customer using groupingBy collector
@@ -106,5 +107,21 @@ public class Main {
                 .map(r -> ((Failure) r).message())
                 .toList();
         System.out.println("task 4 - failure messages: " + failureMessages);
+
+        // task 5: advanced collectors
+        Map<Boolean, List<Book>> recentVsOld = books.stream()
+                .collect(Collectors.partitioningBy(b -> b.year() > 2015));
+        List<Book> recentBooks = recentVsOld.get(true);
+        List<Book> oldBooks = recentVsOld.get(false);
+        System.out.println("\ntask 5 - New Book " + recentBooks);
+        System.out.println("task 5 - Old Books " + oldBooks);
+
+        Map<String, Integer> tm = sales.stream().
+                collect(Collectors.toMap(
+                        Sale::product,
+                        Sale::cents,
+                        Integer::sum,
+                        TreeMap::new));
+        System.out.println("task 5 - " + tm);
     }
 }
