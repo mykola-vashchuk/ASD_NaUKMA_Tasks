@@ -1,0 +1,6 @@
+id,email,status,amountCents
+1,user1@test.com,PAID,15000
+2,user2@test.com,NEW,2500
+3,user3@test.com,ERROR,500
+invalid_row
+4,user4@test.com,FAILED,1000
